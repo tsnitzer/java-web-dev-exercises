@@ -1,11 +1,13 @@
 package org.launchcode.java.demos.lsn2controlflowandcollections;
 
 import java.util.ArrayList;
+//ArrayList is a Java provided class
 import java.util.Scanner;
 
 public class ArrayListGradebook {
 
     public static void main(String[] args) {
+        // declare and initialize the two objects
 
         ArrayList<String> students = new ArrayList<>();
         ArrayList<Double> grades = new ArrayList<>();
@@ -24,14 +26,14 @@ public class ArrayListGradebook {
 
         } while(!newStudent.equals(""));
 
-        // Get student grades
+        // Get student grades with for-each loop
         for (String student : students) {
             System.out.print("Grade for " + student + ": ");
             Double grade = input.nextDouble();
             grades.add(grade);
         }
 
-        // Print class roster
+        // Print class roster with for loop
         System.out.println("\nClass roster:");
         double sum = 0.0;
 

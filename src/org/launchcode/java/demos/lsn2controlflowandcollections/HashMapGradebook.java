@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class HashMapGradebook {
 
     public static void main(String[] args) {
-
+        // Declare a HashMap called students:
         HashMap<String, Double> students = new HashMap<>();
         Scanner input = new Scanner(System.in);
         String newStudent;
